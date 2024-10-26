@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lifestyle Vibes</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Amatic+SC:ital,wght@0,300;0,400;0,500;0,600;0,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome for Social Media Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="bg-dark text-white p-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <h1>Lifestyle Vibes</h1>
+            <nav>
+                <ul class="list-unstyled d-flex mb-0">
+                    <li class="ms-3"><a class="text-white" href="#home">Home</a></li>
+                    <li class="ms-3"><a class="text-white" href="#about">About</a></li>
+                    <li class="ms-3"><a class="text-white" href="#contact">Contact</a></li>
+                    <li class="ms-3"><a class="text-white" href="#subscribe">Subscribe</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Welcome Section with Carousel -->
+    <section id="home" class="welcome text-center position-relative">
+        <div id="welcomeCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="500">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="image-3.jpeg" alt="Lifestyle Image 1" class="img-fluid w-100" style="height: 400px; object-fit: cover;">
+                </div>
+                <div class="carousel-item">
+                    <img src="image-1.jpeg" alt="Lifestyle Image 2" class="img-fluid w-100" style="height: 400px; object-fit: cover;">
+                </div>
+                <div class="carousel-item">
+                    <img src="image-2.jpeg" alt="Lifestyle Image 3" class="img-fluid w-100" style="height: 400px; object-fit: cover;">
+                </div>
+            </div>
+            <div class="carousel-caption d-none d-md-block">
+                <h2 class="text-white">Welcome to Lifestyle Vibes</h2>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section with Vision and Mission -->
+    <section id="about" class="about bg-light py-5 text-center">
+        <h1>About</h1>
+        <div class="d-flex justify-content-around my-4">
+            <div class="vision" style="width: 45%;">
+                <h2>Our Vision</h2>
+                <p>Our vision is to inspire individuals to embrace a holistic approach to living, where wellness extends beyond the physical realm and encompasses mental and emotional well-being</p>
+            </div>
+            <div class="mission" style="width: 45%;">
+                <h2>Our Mission</h2>
+                <p>Our mission is to be a guiding light for those seeking to enhance their quality of life through informed lifestyle choices</p>
+            </div>
+        </div>
+        <div class="row my-4">
+            <div class="col-md-3 text-center">
+                <img src="image-1.jpeg" alt="Image 1" class="img-fluid rounded mb-2">
+                <p>Experience the thrill of cardio workouts! This energetic exercise not only boosts your heart health</p>
+            </div>
+            <div class="col-md-3 text-center">
+                <img src="image-2.jpeg" alt="Image 2" class="img-fluid rounded mb-2">
+                <p>Empower yourself through strength training! With every rep, you build not just muscle, but resilience</p>
+            </div>
+            <div class="col-md-3 text-center">
+                <img src="image-3.jpeg" alt="Image 3" class="img-fluid rounded mb-2">
+                <p>Nourish your body with vibrant, nutritious meals! Packed with essential vitamins and minerals</p>
+            </div>
+            <div class="col-md-3 text-center">
+                <img src="image-4.jpeg" alt="Image 4" class="img-fluid rounded mb-2">
+                <p>Embrace the joy of aerobics! This fun and dynamic workout combines rhythm and movement</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Subscribe Section -->
+    <section id="subscribe" class="subscribe bg-dark text-white py-5">
+        <div class="container text-center">
+            <h2>Join Our Community</h2>
+            <p>Subscribe for the latest lifestyle updates</p>
+            <form id="subscribe-form" action="#">
+                <div class="row justify-content-center">
+                    <div class="col-md-3">
+                        <input type="text" id="name" class="form-control" placeholder="First Name" required>
+                    </div>
+                    <div class="col-md-3">
+                        <input type="email" id="email" class="form-control" placeholder="Email" required>
+                    </div>
+                    <div class="col-md-2">
+                        <button type="submit" class="btn btn-success w-100">Subscribe</button>
+                    </div>
+                </div>
+            </form>
+            <div id="thank-you-message" class="mt-3" style="display: none;">Thank you for subscribing!</div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-dark text-white py-4">
+        <div class="container d-flex justify-content-around">
+            <div class="footer-column text-center">
+                <h3>Lifestyle Vibes</h3>
+                <p>Jalan Maharaja Suka Maneh 2</p>
+                <p>T: (021) 5881392</p>
+                <p>E: lifestyle@vibes.com</p>
+            </div>
+            <div class="footer-column text-center">
+                <h3>About</h3>
+                <p><a class="text-white" href="#about">Our Mission</a></p>
+                <p><a class="text-white" href="#">Meet The Team</a></p>
+            </div>
+            <div class="footer-column text-center">
+                <h3>Contact Us</h3>
+                <p><a class="text-white" href="#">Find Us</a></p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
